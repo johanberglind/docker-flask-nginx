@@ -11,9 +11,6 @@ RUN apt-get update && \
 
 RUN mkdir -p /app
 
-ADD run.sh /run.sh
-RUN chmod 755 /run.sh
-
 ADD requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
